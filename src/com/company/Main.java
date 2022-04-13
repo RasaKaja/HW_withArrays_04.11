@@ -16,12 +16,12 @@ public class Main {
 //      t2.calc();
 
 // TASK3:
-        Task3 t3 = new Task3();
-        t3.calc();
+//        Task3 t3 = new Task3();
+//        t3.calc();
 
+// TASK3:
+        Task4 t4 = new Task4();
+        t4.calc();
 
     }
-
-
-
 }
