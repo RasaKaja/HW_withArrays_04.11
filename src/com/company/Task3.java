@@ -15,6 +15,7 @@ public class Task3 {
             }
         }
     }
+
 }
 
 //Write a program that takes an integer from the user and prints all its divisors in the console, each divisor in seperate line.
