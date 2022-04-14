@@ -1,36 +1,56 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Task5 {
 
-    Scanner scanner = new Scanner(System.in);
-
-
-  //  int[] list = new int[];
-    int input;
-    int counter = 0;
-    int j = 0;
-    int sum = 0;
-    int sumOf[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; //sumOf[j]
+    int sum1, sum2, sum3, sum4, sum5, sum6, sum7, sum8, sum9, sum10;
     int table[] = {6, 5, 4, 5, 10, 5, 8, 3, 1, 0, 6, 6, 6, 4, 3, 2, 8, 1, 3, 4, 7}; //table[i]
 
-
-    void calc() {
-//        System.out.println("Please input as much as you want numbers, or put 0 if you want to end.");
-//        input = scanner.nextInt();
-        //input = list[i];
-
-        for (int i = 0; i < table.length; i++) {
-            while (j < sumOf.length) {
-                if (table[i] == sumOf[j]) {
-                    sumOf[j] = sum + 1;
-                }
-                j++;
+    public void calc_switch(){
+             for (int i = 0; i < table.length; i++) {
+            switch (table[i]) {
+                case 1:
+                    sum1 = sum1 + 1;
+                    break;
+                case 2:
+                    sum2 = sum2 + 1;
+                    break;
+                case 3:
+                    sum3 = sum3 + 1;
+                    break;
+                case 4:
+                    sum4 = sum4 + 1;
+                    break;
+                case 5:
+                    sum5 = sum5 + 1;
+                    break;
+                case 6:
+                    sum6 = sum6 + 1;
+                    break;
+                case 7:
+                    sum7 = sum7 + 1;
+                    break;
+                case 8:
+                    sum8 = sum8 + 1;
+                    break;
+                case 9:
+                    sum9 = sum9 + 1;
+                    break;
+                case 10:
+                    sum10 = sum10 + 1;
+                    break;
             }
         }
+        System.out.println("1 - " + sum1);
+        System.out.println("2 - " + sum2);
+        System.out.println("3 - " + sum3);
+        System.out.println("4 - " + sum4);
+        System.out.println("5 - " + sum5);
+        System.out.println("6 - " + sum6);
+        System.out.println("7 - " + sum7);
+        System.out.println("8 - " + sum8);
+        System.out.println("9 - " + sum9);
+        System.out.println("10 - " + sum10);
     }
-
 
 }
 
