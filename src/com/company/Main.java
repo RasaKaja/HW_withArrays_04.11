@@ -25,8 +25,16 @@ public class Main {
 //        t4.DavidCalc();
 
 // TASK5:
-        Task5 t5 = new Task5();
-        t5.calc_switch();
+//        Task5 t5 = new Task5();
+//        t5.calc_switch();
 
+// TASK6:
+//          Task6 t6 = new Task6();
+//          t6.calc();
+
+
+//TASK7:
+        Task7 t7 = new Task7();
+        t7.diff();
     }
 }
