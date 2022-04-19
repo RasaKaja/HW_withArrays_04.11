@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -33,8 +34,19 @@ public class Main {
 //          t6.calc();
 
 
-//TASK7:
-        Task7 t7 = new Task7();
-        t7.diff();
+// TASK7:
+//        Task7 t7 = new Task7();
+//        t7.diff();
+
+// TASK8:
+//        Task8 t8 = new Task8();
+//        t8.calc();
+
+// TASK9:
+        Task9 t9 = new Task9();
+        t9.InsertionSort(t9.numbers);
+       //System.out.println(Arrays.toString(t9.numbers));
+        t9.newNumbers(t9.numbers);
+
     }
 }
