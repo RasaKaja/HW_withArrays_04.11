@@ -23,12 +23,10 @@ public class Task2 {
             if (input > maxNum) {
                 maxNum = input;
                 minNum = minNum;
-                //System.out.println("MAX: " + maxNum);
-                //System.out.println("MIN: " + minNum);
+
             } else if (input < minNum){
                 minNum = input;
-                //System.out.println("MIN: " + minNum);
-                //System.out.println("MAX: " + maxNum);
+
             }
             //sum = sum + input;
             input = scanner.nextInt();

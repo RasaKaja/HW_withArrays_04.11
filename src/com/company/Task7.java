@@ -29,6 +29,27 @@ public class Task7 {
         // printing diff:
         System.out.println("Difference between the largest value '" + max + "' and the smallest value '" + min + "' in array is: " + (max-min));
     }
+
+    public void DavidCalc() {
+        int largest;
+        int smallest;
+        int[] arr = {6, 5, 4, 5, 10, 5, 8, 3, 1, 6, 6, 6, 4, 3, 2, 8, 15, 3, 4, 7};
+
+        largest = arr[0];
+        smallest = arr[0];
+
+        for (int num : arr){
+            if (num > largest) {
+                largest = num;
+            }
+            if (num < smallest) {
+                smallest = num;
+            }
+        }
+
+        int diff = largest - smallest;
+        System.out.println("The difference between the largest and the smallest value is: " + diff);
+    }
 }
 
 //Write a Java program to get the difference between the largest and smallest values in an array of integers. The length of the array must be 1 and above.

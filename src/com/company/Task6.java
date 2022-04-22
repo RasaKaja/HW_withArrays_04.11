@@ -81,6 +81,55 @@ public class Task6 {
             }
         }
     }
+
+    public void DavidCalc() {
+        int[] table = {6, 5, 4, 5, 10, 5, 8, 3, 1, 0, 6, 6, 6, 4, 3, 2, 8, 1, 3, 4, 7, 9, 10, 1};
+        int [] table2 = new int[table.length];
+
+        // loop through each element in array
+        // set the current element to a variable current to truck if that element is duplicate
+        // loop through the array comparing the current element value with the other values to check if there is a duplicate
+        // check if current item already exists in the duplicate array, and skip iteration if it does
+        // add duplicate element new array to store numbers that are duplicate
+
+        // loop through each item in the array
+        for (int i = 0; i < table.length; i++) {
+
+            // set the current item to variable current
+            int current = table[i];
+
+            // loop through other items in the array to determine if there is a duplicate
+            for (int j = i + 1; j < table.length; j++) {
+
+                // check if current item exists in array of duplicate item and exit loop if true meaning we don't want
+                // to have more than one values of the duplicated item
+                if (contains(table2, current)) {
+                    break;
+                }
+
+                // check if current item is a duplicate and print message to console if yes, and also
+                if (current == table[j]) { //check if the current is a duplicate
+                    System.out.println(current + " is a duplicate!");
+                    table2[i] = current;
+
+                }
+            }
+        }
+
+    } //close the method
+
+    // method that helps check if an element is present in an array
+    public boolean contains(int[] array, int key) {
+        // loops through array
+        for (int i : array) {
+            //check if key passed is equal to any element in array and return if true
+            if (i == key) {
+                return true;
+            }
+        }
+        // after loop is completed and nothing is returned than key doesn't exist in array so return false
+        return false;
+    }
 }
 
 //Write a Java program to find the duplicate values of an array of integer values.

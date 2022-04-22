@@ -43,6 +43,7 @@ public class Task9 {
         }
         System.out.println("Array length is: " + MaxCounter);
     }
+
 }
 
 //Write a Java program to find the length of the longest consecutive elements sequence from a given unsorted array of integers.

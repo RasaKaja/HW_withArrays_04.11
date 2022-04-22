@@ -3,7 +3,7 @@ package com.company;
 public class Task5 {
 
     int sum1, sum2, sum3, sum4, sum5, sum6, sum7, sum8, sum9, sum10;
-    int table[] = {6, 5, 4, 5, 10, 5, 8, 3, 1, 0, 6, 6, 6, 4, 3, 2, 8, 1, 3, 4, 7}; //table[i]
+    int table[] = {6, 5, 4, 5, 10, 5, 8, 3, 1, 0, 6, 6, 6, 4, 3, 2, 8, 1, 3, 4, 7, 9, 10, 1}; //table[i]
 
     public void calc_switch(){
              for (int i = 0; i < table.length; i++) {
@@ -52,6 +52,23 @@ public class Task5 {
         System.out.println("10 - " + sum10);
     }
 
+    public void DavidCalc() {
+        // Use loop to iterate over array and print out how many times each number occurs
+
+        for (int i = 1; i <= 10; i++) {
+
+            // set variable to hold amount of time a number occurs
+            int sum = 0;
+
+            // loop through array to find the amount of time the current number occurs and save the value to sum
+            for (int item : table) {
+                if (i == item) {
+                    sum += 1;
+                } // close if
+            } // close for
+            System.out.println(i + " - " + sum); // output the value of each iteration 1-10 and the amount of the time it occurs
+        } // close for
+    }
 }
 
 //Write a program that counts how many times each of the numbers has appeared in the prepared table and prints a summary in the console. An array can contain ** only ** numbers from 1 to 10.
